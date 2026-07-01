@@ -10,6 +10,10 @@ dist/
 build/
 coverage/
 *.tsbuildinfo
+.open-next/
+.wrangler/
+.dev.vars*
+!.dev.vars.example
 
 # Local environment
 .env

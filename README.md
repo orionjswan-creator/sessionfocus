@@ -7,11 +7,29 @@ This MVP uses real microphone capture for live sessions. It does not diagnose, a
 ## Run
 
 ```bash
-npm install
-npm run dev
+pnpm install
+pnpm dev
 ```
 
 Open `http://localhost:3000/dashboard`.
+
+## Deploy to Cloudflare
+
+The web app is configured for Cloudflare Workers through OpenNext.
+
+```bash
+cd apps/web
+pnpm wrangler login
+pnpm run deploy
+```
+
+For Cloudflare's GitHub integration, connect `orionjswan-creator/sessionfocus` and use:
+
+- Root directory: `apps/web`
+- Build command: `pnpm run deploy`
+- Worker name: `sessionfocus`
+
+Local OpenNext builds can fail on Windows if symlink creation is blocked. If that happens, deploy from Cloudflare's Linux build environment or run the deploy command from WSL.
 
 ## Current MVP Behavior
 

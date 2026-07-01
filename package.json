@@ -9,6 +9,8 @@
     "dev": "npm --workspace @sessionfocus/web run dev",
     "build": "npm --workspace @sessionfocus/web run build",
     "lint": "npm --workspace @sessionfocus/web run lint",
-    "typecheck": "npm --workspace @sessionfocus/web run typecheck"
+    "typecheck": "npm --workspace @sessionfocus/web run typecheck",
+    "preview:web": "npm --workspace @sessionfocus/web run preview",
+    "deploy:web": "npm --workspace @sessionfocus/web run deploy"
   }
 }
