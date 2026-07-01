@@ -1,0 +1,12 @@
+name = "sessionfocus-api"
+main = "workers/api/src/index.ts"
+compatibility_date = "2026-06-30"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "sessionfocus"
+database_id = "local-sessionfocus"
+
+[[r2_buckets]]
+binding = "AUDIO_BUCKET"
+bucket_name = "sessionfocus-audio"

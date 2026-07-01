@@ -1,0 +1,14 @@
+{
+  "name": "sessionfocus",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/web"
+  ],
+  "scripts": {
+    "dev": "npm --workspace @sessionfocus/web run dev",
+    "build": "npm --workspace @sessionfocus/web run build",
+    "lint": "npm --workspace @sessionfocus/web run lint",
+    "typecheck": "npm --workspace @sessionfocus/web run typecheck"
+  }
+}
