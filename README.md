@@ -31,6 +31,12 @@ For Cloudflare's GitHub integration, connect `orionjswan-creator/sessionfocus` a
 
 Local OpenNext builds can fail on Windows if symlink creation is blocked. If that happens, deploy from Cloudflare's Linux build environment or run the deploy command from WSL.
 
+If Cloudflare Workers Builds hangs before cloning/installing, use the manual GitHub Actions workflow instead:
+
+1. Create a Cloudflare API token that can edit Workers.
+2. Add GitHub repository secrets named `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`.
+3. In GitHub, open Actions -> Deploy to Cloudflare -> Run workflow.
+
 ## Current MVP Behavior
 
 - Create sessions with consent confirmation.
