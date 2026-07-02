@@ -34,7 +34,7 @@ jobs:
 
       - name: Build Cloudflare bundle
         working-directory: apps/web
-        run: pnpm opennextjs-cloudflare build
+        run: pnpm run cf:build
 
       - name: Deploy Worker
         working-directory: apps/web
