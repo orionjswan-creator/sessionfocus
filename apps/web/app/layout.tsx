@@ -5,7 +5,11 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "SessionFocus MVP",
-  description: "Human-reviewed psychological support and social work documentation assistant"
+  description: "Human-reviewed psychological support and social work documentation assistant",
+  robots: {
+    index: false,
+    follow: false
+  }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

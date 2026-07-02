@@ -133,13 +133,15 @@ export default function NewSessionPage() {
             onChange={(event) => setConsentConfirmed(event.target.checked)}
           />
           <span className="text-sm leading-6">
-            I confirm that recording and AI-assisted documentation use are permitted for this session.
+            I confirm that recording and AI-assisted documentation use are permitted for this session, including any
+            consent required by applicable law, policy, and professional rules.
           </span>
         </label>
 
         <Notice>
-          Resource and referral suggestions are documentation aids only. Practitioner must verify eligibility,
-          availability, consent, and local requirements before referral.
+          Use a client alias instead of identifying details when possible. Resource and referral suggestions are
+          documentation aids only. Practitioner must verify eligibility, availability, consent, and local requirements
+          before referral.
         </Notice>
 
         <Button type="submit" disabled={!consentConfirmed} className="w-full md:w-auto">
